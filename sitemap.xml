@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://dupe.sh/categories/</loc>
+  </url><url>
+    <loc>http://dupe.sh/</loc>
+  </url><url>
+    <loc>http://dupe.sh/project/example/</loc>
+  </url><url>
+    <loc>http://dupe.sh/notebook/hello/</loc>
+  </url><url>
+    <loc>http://dupe.sh/notebook/hello2/</loc>
+  </url><url>
+    <loc>http://dupe.sh/notebook/</loc>
+  </url><url>
+    <loc>http://dupe.sh/project/</loc>
+  </url><url>
+    <loc>http://dupe.sh/tags/</loc>
+  </url><url>
+    <loc>http://dupe.sh/project/test/</loc>
+  </url>
+</urlset>
