@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on dupe.sh</title>
+    <link>http://dupe.sh/project/</link>
+    <description>Recent content in Projects on dupe.sh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://dupe.sh/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example Project</title>
+      <link>http://dupe.sh/project/example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://dupe.sh/project/example/</guid>
+      <description>This is an example project </description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>http://dupe.sh/project/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://dupe.sh/project/test/</guid>
+      <description> This is a test. WOW! </description>
+    </item>
+    
+  </channel>
+</rss>

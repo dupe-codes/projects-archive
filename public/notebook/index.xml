@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notebooks on dupe.sh</title>
+    <link>http://dupe.sh/notebook/</link>
+    <description>Recent content in Notebooks on dupe.sh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://dupe.sh/notebook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hello</title>
+      <link>http://dupe.sh/notebook/hello/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://dupe.sh/notebook/hello/</guid>
+      <description>Quarto Basics For a demonstration of a line plot on a polar axis, see Figure 1.
+Code import numpy as np import matplotlib.pyplot as plt r = np.arange(0, 2, 0.01) theta = 6 * np.pi * r fig, ax = plt.subplots( subplot_kw = {&amp;#39;projection&amp;#39;: &amp;#39;polar&amp;#39;} ) ax.plot(theta, r); ax.set_rticks([0.5, 1, 1.5, 2]); ax.grid(True); plt.show() Figure 1: A line plot on a polar axis</description>
+    </item>
+    
+    <item>
+      <title>hello2</title>
+      <link>http://dupe.sh/notebook/hello2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://dupe.sh/notebook/hello2/</guid>
+      <description>Quarto Basics Quarto Basics For a demonstration of a line plot on a polar axis, see Figure 1.
+Code import numpy as np import matplotlib.pyplot as plt r = np.arange(0, 2, 0.01) theta = 6 * np.pi * r fig, ax = plt.subplots( subplot_kw = {&amp;#39;projection&amp;#39;: &amp;#39;polar&amp;#39;} ) ax.plot(theta, r); ax.set_rticks([0.5, 1, 1.5, 2]); ax.grid(True); plt.show() Figure 1: A line plot on a polar axis</description>
+    </item>
+    
+  </channel>
+</rss>
