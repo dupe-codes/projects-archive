@@ -1,0 +1,28 @@
+baseURL = "http://dupe.sh/"
+languageCode = "en-us"
+title = "dupe.sh"
+theme = "accessible-minimalism"
+disableHugoGeneratorInject = true
+enableRobotsTXT = true
+
+[menu]
+  [[menu.main]]
+    name = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "example project"
+    url = "/project/example"
+    weight = 2
+  [[menu.main]]
+    name = "test html only"
+    url = "/project/test"
+    weight = 3
+  [[menu.main]]
+    name = "test quarto file"
+    url = "/notebook/hello"
+    weight = 4
+  [[menu.main]]
+    name = "test quarto 2"
+    url = "/notebook/hello2"
+    weight = 5
