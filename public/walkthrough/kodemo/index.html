@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    
+    
+    <title>dupe.sh | Kodemo Test</title>
+    <style type="text/css">
+  body {
+    margin: 5%;
+    font-size: 150%;
+    font-family: Berkeley Mono,muli,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  }
+
+  ul {
+    list-style: none;
+  }
+  li:before { 
+    content: '> ';
+  }
+  li {
+    font-size: 85%;
+    padding: 0.15em;
+  }
+
+  @font-face {
+    font-family: Berkeley Mono;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Berkeley Mono"),
+        url("/fonts/BerkeleyMono-Regular.woff") format("woff"),
+        url("/fonts/BerkeleyMono-Regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: Berkeley Mono;
+    font-style: italic;
+    font-weight: 400;
+    src: local("Berkeley Mono"),
+        url("/fonts/BerkeleyMono-Italic.woff") format("woff"),
+        url("/fonts/BerkeleyMono-Italic.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: Berkeley Mono;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Berkeley Mono"),
+        url("/fonts/BerkeleyMono-Bold.woff") format("woff"),
+        url("/fonts/BerkeleyMono-Bold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: Berkeley Mono;
+    font-style: italic;
+    font-weight: 700;
+    src: local("Berkeley Mono"),
+        url("/fonts/BerkeleyMono-BoldItalic.woff") format("woff"),
+        url("/fonts/BerkeleyMono-BoldItalic.woff2") format("woff2");
+  }
+
+</style>
+
+</head>
+<body>
+
+
+
+<h1>Kodemo Test</h1>
+
+
+  
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Untitled</title>
+    <!-- The Kodemo player is also available via npm: https://kodemo.com/docs/player -->
+    <script src="https://unpkg.com/@kodemo/player-standalone/dist/kodemo-player.umd.js"></script>
+  </head>
+  <body>
+    <script>
+      // The KodemoPlayer constructor accepts width/height props for size control
+      const player = new KodemoPlayer();
+
+      // Load our document JSON
+      player.load(JSON.parse(decodeURIComponent("%7B%22story%22%3A%22%3Ch1%20id%3D%5C%22perceptron%5C%22%3EPerceptron%3C%2Fh1%3E%3Cp%3E%3Cspan%20data-effect-id%3D%5C%22effect-1681681829409-19%5C%22%20data-effect-subject%3D%5C%223043f43848dd0e13dd6d62ecf79dfa2a%5C%22%20data-effect-version%3D%5C%225400ff493e35fe86314b7c8cef9d3444%5C%22%3EThis%20is%20step%201%3C%2Fspan%3E%3C%2Fp%3E%3Cp%3E%3Cspan%20data-effect-id%3D%5C%22effect-1681681759836-11%5C%22%20data-effect-subject%3D%5C%223043f43848dd0e13dd6d62ecf79dfa2a%5C%22%20data-effect-version%3D%5C%22e1a7d49d40d12e37b7c8fbd16cd3f0f8%5C%22%20data-effect-payload%3D%5C%22%7B%26quot%3BcodeHighlights%26quot%3B%3A%26quot%3B12-27%26quot%3B%7D%5C%22%3EThis%20is%20step%202%3C%2Fspan%3E%3C%2Fp%3E%3Cp%3E%3Cspan%20data-effect-id%3D%5C%22effect-1681681797363-16%5C%22%20data-effect-subject%3D%5C%223043f43848dd0e13dd6d62ecf79dfa2a%5C%22%20data-effect-version%3D%5C%22d3c051fcabe90b2dc6ea4c26a3b205f0%5C%22%20data-effect-payload%3D%5C%22%7B%26quot%3BcodeHighlights%26quot%3B%3A%26quot%3B32-33%26quot%3B%7D%5C%22%3EThis%20is%20step%203%3C%2Fspan%3E%3C%2Fp%3E%3Cp%3E%3C%2Fp%3E%22%2C%22title%22%3A%22Untitled%22%2C%22subjects%22%3A%7B%223043f43848dd0e13dd6d62ecf79dfa2a%22%3A%7B%22created_at%22%3A1681681713113%2C%22versions%22%3A%7B%225400ff493e35fe86314b7c8cef9d3444%22%3A%7B%22value%22%3A%22import%20numpy%20as%20np%5Cnfrom%20matplotlib.colors%20import%20ListedColormap%5Cnimport%20matplotlib.pyplot%20as%20plt%5Cn%5Cnclass%20Perceptron%3A%5Cn%5Cn%20%20%20%20def%20__init__(self%2C%20eta%3D0.01%2C%20n_iter%3D50%2C%20random_state%3D1)%3A%5Cn%20%20%20%20%20%20%20%20self.eta%20%3D%20eta%5Cn%20%20%20%20%20%20%20%20self.n_iter%20%3D%20n_iter%5Cn%20%20%20%20%20%20%20%20self.random_state%20%3D%20random_state%5Cn%5Cn%20%20%20%20def%20net_input(self%2C%20X)%3A%5Cn%20%20%20%20%20%20%20%20return%20np.dot(X%2C%20self.w_)%20%2B%20self.b_%5Cn%5Cn%5Cndef%20plot_decision_regions(X%2C%20y%2C%20classifier%2C%20resolution%3D0.02)%3A%5Cn%20%20%20%20markers%20%3D%20('o'%2C%20's'%2C%20'%5E'%2C%20'v'%2C%20'%3C')%5Cn%20%20%20%20colors%20%3D%20('red'%2C%20'blue'%2C%20'lightgreen'%2C%20'gray'%2C%20'cyan')%5Cn%20%20%20%20cmap%20%3D%20ListedColormap(colors%5B%3Alen(np.unique(y))%5D)%5Cn%5Cn%20%20%20%20x1_min%2C%20x1_max%20%3D%20X%5B%3A%2C%200%5D.min()%20-%201%2C%20X%5B%3A%2C%200%5D.max()%20%2B%201%5Cn%20%20%20%20x2_min%2C%20x2_max%20%3D%20X%5B%3A%2C%201%5D.min()%20-%201%2C%20X%5B%3A%2C%201%5D.max()%20%2B%201%20%5Cn%20%20%20%20xx1%2C%20xx2%20%3D%20np.meshgrid(np.arange(x1_min%2C%20x1_max%2C%20resolution)%2C%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20np.arange(x2_min%2C%20x2_max%2C%20resolution))%5Cn%20%20%20%20%5Cn%20%20%20%20lab%20%3D%20classifier.predict(np.array(%5Bxx1.ravel()%2C%20xx2.ravel()%5D).T)%5Cn%20%20%20%20lab%20%3D%20lab.reshape(xx1.shape)%5Cn%20%20%20%20plt.contourf(xx1%2C%20xx2%2C%20lab%2C%20alpha%3D0.3%2C%20cmap%3Dcmap)%5Cn%20%20%20%20plt.xlim(xx1.min()%2C%20xx1.max())%5Cn%20%20%20%20plt.ylim(xx2.min()%2C%20xx2.max())%5Cn%5Cn%20%20%20%20for%20idx%2C%20cl%20in%20enumerate(np.unique(y))%3A%5Cn%20%20%20%20%20%20%20%20plt.scatter(x%3DX%5By%20%3D%3D%20cl%2C%200%5D%2C%20%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20y%3DX%5By%20%3D%3D%20cl%2C%201%5D%2C%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20alpha%3D0.8%2C%20%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20c%3Dcolors%5Bidx%5D%2C%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20marker%3Dmarkers%5Bidx%5D%2C%20%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20label%3Df'Class%20%7Bcl%7D'%2C%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20edgecolor%3D'black')%5Cn%22%7D%2C%22e1a7d49d40d12e37b7c8fbd16cd3f0f8%22%3A%7B%22created_at%22%3A1681681715470%2C%22value%22%3A%22import%20numpy%20as%20np%5Cnfrom%20matplotlib.colors%20import%20ListedColormap%5Cnimport%20matplotlib.pyplot%20as%20plt%5Cn%5Cnclass%20Perceptron%3A%5Cn%5Cn%20%20%20%20def%20__init__(self%2C%20eta%3D0.01%2C%20n_iter%3D50%2C%20random_state%3D1)%3A%5Cn%20%20%20%20%20%20%20%20self.eta%20%3D%20eta%5Cn%20%20%20%20%20%20%20%20self.n_iter%20%3D%20n_iter%5Cn%20%20%20%20%20%20%20%20self.random_state%20%3D%20random_state%5Cn%20%20%20%20%5Cn%20%20%20%20def%20fit(self%2C%20X%2C%20y)%3A%5Cn%20%20%20%20%20%20%20%20rgen%20%3D%20np.random.RandomState(self.random_state)%5Cn%20%20%20%20%20%20%20%20self.w_%20%3D%20rgen.normal(loc%3D0.0%2C%20scale%3D0.01%2C%20size%3DX.shape%5B1%5D)%5Cn%20%20%20%20%20%20%20%20self.b_%20%3D%20np.float_(0.0)%5Cn%20%20%20%20%20%20%20%20self.errors_%20%3D%20%5B%5D%5Cn%5Cn%20%20%20%20%20%20%20%20for%20_%20in%20range(self.n_iter)%3A%5Cn%20%20%20%20%20%20%20%20%20%20%20%20errors%20%3D%200%5Cn%20%20%20%20%20%20%20%20%20%20%20%20for%20xi%2C%20target%20in%20zip(X%2C%20y)%3A%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20update%20%3D%20self.eta%20*%20(target%20-%20self.predict(xi))%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20self.w_%20%2B%3D%20update%20*%20xi%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20self.b_%20%2B%3D%20update%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20errors%20%2B%3D%20int(update%20!%3D%200.0)%5Cn%20%20%20%20%20%20%20%20%20%20%20%20self.errors_.append(errors)%5Cn%5Cn%20%20%20%20%20%20%20%20return%20self%5Cn%5Cn%20%20%20%20def%20net_input(self%2C%20X)%3A%5Cn%20%20%20%20%20%20%20%20return%20np.dot(X%2C%20self.w_)%20%2B%20self.b_%5Cn%5Cn%5Cndef%20plot_decision_regions(X%2C%20y%2C%20classifier%2C%20resolution%3D0.02)%3A%5Cn%20%20%20%20markers%20%3D%20('o'%2C%20's'%2C%20'%5E'%2C%20'v'%2C%20'%3C')%5Cn%20%20%20%20colors%20%3D%20('red'%2C%20'blue'%2C%20'lightgreen'%2C%20'gray'%2C%20'cyan')%5Cn%20%20%20%20cmap%20%3D%20ListedColormap(colors%5B%3Alen(np.unique(y))%5D)%5Cn%5Cn%20%20%20%20x1_min%2C%20x1_max%20%3D%20X%5B%3A%2C%200%5D.min()%20-%201%2C%20X%5B%3A%2C%200%5D.max()%20%2B%201%5Cn%20%20%20%20x2_min%2C%20x2_max%20%3D%20X%5B%3A%2C%201%5D.min()%20-%201%2C%20X%5B%3A%2C%201%5D.max()%20%2B%201%20%5Cn%20%20%20%20xx1%2C%20xx2%20%3D%20np.meshgrid(np.arange(x1_min%2C%20x1_max%2C%20resolution)%2C%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20np.arange(x2_min%2C%20x2_max%2C%20resolution))%5Cn%20%20%20%20%5Cn%20%20%20%20lab%20%3D%20classifier.predict(np.array(%5Bxx1.ravel()%2C%20xx2.ravel()%5D).T)%5Cn%20%20%20%20lab%20%3D%20lab.reshape(xx1.shape)%5Cn%20%20%20%20plt.contourf(xx1%2C%20xx2%2C%20lab%2C%20alpha%3D0.3%2C%20cmap%3Dcmap)%5Cn%20%20%20%20plt.xlim(xx1.min()%2C%20xx1.max())%5Cn%20%20%20%20plt.ylim(xx2.min()%2C%20xx2.max())%5Cn%5Cn%20%20%20%20for%20idx%2C%20cl%20in%20enumerate(np.unique(y))%3A%5Cn%20%20%20%20%20%20%20%20plt.scatter(x%3DX%5By%20%3D%3D%20cl%2C%200%5D%2C%20%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20y%3DX%5By%20%3D%3D%20cl%2C%201%5D%2C%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20alpha%3D0.8%2C%20%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20c%3Dcolors%5Bidx%5D%2C%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20marker%3Dmarkers%5Bidx%5D%2C%20%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20label%3Df'Class%20%7Bcl%7D'%2C%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20edgecolor%3D'black')%5Cn%22%7D%2C%22d3c051fcabe90b2dc6ea4c26a3b205f0%22%3A%7B%22created_at%22%3A1681681715470%2C%22value%22%3A%22import%20numpy%20as%20np%5Cnfrom%20matplotlib.colors%20import%20ListedColormap%5Cnimport%20matplotlib.pyplot%20as%20plt%5Cn%5Cnclass%20Perceptron%3A%5Cn%5Cn%20%20%20%20def%20__init__(self%2C%20eta%3D0.01%2C%20n_iter%3D50%2C%20random_state%3D1)%3A%5Cn%20%20%20%20%20%20%20%20self.eta%20%3D%20eta%5Cn%20%20%20%20%20%20%20%20self.n_iter%20%3D%20n_iter%5Cn%20%20%20%20%20%20%20%20self.random_state%20%3D%20random_state%5Cn%20%20%20%20%5Cn%20%20%20%20def%20fit(self%2C%20X%2C%20y)%3A%5Cn%20%20%20%20%20%20%20%20rgen%20%3D%20np.random.RandomState(self.random_state)%5Cn%20%20%20%20%20%20%20%20self.w_%20%3D%20rgen.normal(loc%3D0.0%2C%20scale%3D0.01%2C%20size%3DX.shape%5B1%5D)%5Cn%20%20%20%20%20%20%20%20self.b_%20%3D%20np.float_(0.0)%5Cn%20%20%20%20%20%20%20%20self.errors_%20%3D%20%5B%5D%5Cn%5Cn%20%20%20%20%20%20%20%20for%20_%20in%20range(self.n_iter)%3A%5Cn%20%20%20%20%20%20%20%20%20%20%20%20errors%20%3D%200%5Cn%20%20%20%20%20%20%20%20%20%20%20%20for%20xi%2C%20target%20in%20zip(X%2C%20y)%3A%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20update%20%3D%20self.eta%20*%20(target%20-%20self.predict(xi))%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20self.w_%20%2B%3D%20update%20*%20xi%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20self.b_%20%2B%3D%20update%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20errors%20%2B%3D%20int(update%20!%3D%200.0)%5Cn%20%20%20%20%20%20%20%20%20%20%20%20self.errors_.append(errors)%5Cn%5Cn%20%20%20%20%20%20%20%20return%20self%5Cn%5Cn%20%20%20%20def%20net_input(self%2C%20X)%3A%5Cn%20%20%20%20%20%20%20%20return%20np.dot(X%2C%20self.w_)%20%2B%20self.b_%5Cn%20%20%20%20%5Cn%20%20%20%20def%20predict(self%2C%20X)%3A%5Cn%20%20%20%20%20%20%20%20return%20np.where(self.net_input(X)%20%3E%3D%200.0%2C%201%2C%200)%5Cn%5Cn%5Cndef%20plot_decision_regions(X%2C%20y%2C%20classifier%2C%20resolution%3D0.02)%3A%5Cn%20%20%20%20markers%20%3D%20('o'%2C%20's'%2C%20'%5E'%2C%20'v'%2C%20'%3C')%5Cn%20%20%20%20colors%20%3D%20('red'%2C%20'blue'%2C%20'lightgreen'%2C%20'gray'%2C%20'cyan')%5Cn%20%20%20%20cmap%20%3D%20ListedColormap(colors%5B%3Alen(np.unique(y))%5D)%5Cn%5Cn%20%20%20%20x1_min%2C%20x1_max%20%3D%20X%5B%3A%2C%200%5D.min()%20-%201%2C%20X%5B%3A%2C%200%5D.max()%20%2B%201%5Cn%20%20%20%20x2_min%2C%20x2_max%20%3D%20X%5B%3A%2C%201%5D.min()%20-%201%2C%20X%5B%3A%2C%201%5D.max()%20%2B%201%20%5Cn%20%20%20%20xx1%2C%20xx2%20%3D%20np.meshgrid(np.arange(x1_min%2C%20x1_max%2C%20resolution)%2C%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20np.arange(x2_min%2C%20x2_max%2C%20resolution))%5Cn%20%20%20%20%5Cn%20%20%20%20lab%20%3D%20classifier.predict(np.array(%5Bxx1.ravel()%2C%20xx2.ravel()%5D).T)%5Cn%20%20%20%20lab%20%3D%20lab.reshape(xx1.shape)%5Cn%20%20%20%20plt.contourf(xx1%2C%20xx2%2C%20lab%2C%20alpha%3D0.3%2C%20cmap%3Dcmap)%5Cn%20%20%20%20plt.xlim(xx1.min()%2C%20xx1.max())%5Cn%20%20%20%20plt.ylim(xx2.min()%2C%20xx2.max())%5Cn%5Cn%20%20%20%20for%20idx%2C%20cl%20in%20enumerate(np.unique(y))%3A%5Cn%20%20%20%20%20%20%20%20plt.scatter(x%3DX%5By%20%3D%3D%20cl%2C%200%5D%2C%20%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20y%3DX%5By%20%3D%3D%20cl%2C%201%5D%2C%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20alpha%3D0.8%2C%20%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20c%3Dcolors%5Bidx%5D%2C%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20marker%3Dmarkers%5Bidx%5D%2C%20%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20label%3Df'Class%20%7Bcl%7D'%2C%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20edgecolor%3D'black')%5Cn%22%7D%7D%2C%22versionIndex%22%3A%5B%225400ff493e35fe86314b7c8cef9d3444%22%2C%22e1a7d49d40d12e37b7c8fbd16cd3f0f8%22%2C%22d3c051fcabe90b2dc6ea4c26a3b205f0%22%5D%2C%22type%22%3A%22code%22%2C%22name%22%3A%22perceptron.py%22%2C%22language%22%3A%22python%22%7D%7D%2C%22subjectIndex%22%3A%5B%223043f43848dd0e13dd6d62ecf79dfa2a%22%5D%2C%22version%22%3A%220.3.1%22%7D")));
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+<p><a name="nav-menu" id="nav-menu"></a></p>
+
+<ul>
+    
+    <li>
+      <a href="/">
+      
+      home
+      </a>
+    </li>
+    
+    <li>
+      <a href="/project/example">
+      
+      example project
+      </a>
+    </li>
+    
+    <li>
+      <a href="/project/test">
+      
+      test html only
+      </a>
+    </li>
+    
+    <li>
+      <a href="/notebook/hello">
+      
+      test quarto file
+      </a>
+    </li>
+    
+    <li>
+      <a href="/notebook/hello2">
+      
+      test quarto 2
+      </a>
+    </li>
+    
+    <li>
+      <a href="/walkthrough/kodemo">
+      
+      kodemo test
+      </a>
+    </li>
+    
+</ul>
+
+
+</body>
+</html>

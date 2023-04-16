@@ -26,3 +26,8 @@ enableRobotsTXT = true
     name = "test quarto 2"
     url = "/notebook/hello2"
     weight = 5
+  [[menu.main]]
+    name = "kodemo test"
+    url = "/walkthrough/kodemo"
+    weight = 6
+

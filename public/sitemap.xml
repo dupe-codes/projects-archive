@@ -12,6 +12,8 @@
   </url><url>
     <loc>http://dupe.sh/notebook/hello2/</loc>
   </url><url>
+    <loc>http://dupe.sh/walkthrough/kodemo/</loc>
+  </url><url>
     <loc>http://dupe.sh/notebook/</loc>
   </url><url>
     <loc>http://dupe.sh/project/</loc>
@@ -19,5 +21,7 @@
     <loc>http://dupe.sh/tags/</loc>
   </url><url>
     <loc>http://dupe.sh/project/test/</loc>
+  </url><url>
+    <loc>http://dupe.sh/walkthrough/</loc>
   </url>
 </urlset>
