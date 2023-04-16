@@ -13,6 +13,7 @@ msg="rebuilding site $(date)"
 if [ -n "$*" ]; then
 	msg="$*"
 fi
+git add .
 git commit -m "$msg"
 
 # Push public directory to gh-pages branch
