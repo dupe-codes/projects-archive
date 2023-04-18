@@ -6,7 +6,7 @@ disableHugoGeneratorInject = true
 enableRobotsTXT = true
 
 [params]
-    byline = "jaunts through the software frontier"
+    byline = "jaunts through the software frontiers"
     link = "https://dupe.lol"
     linkText = "dupe.lol"
     aboutMeLink = "https://dupe.lol/about-me"
