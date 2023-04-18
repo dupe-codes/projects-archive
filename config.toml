@@ -9,6 +9,8 @@ enableRobotsTXT = true
     byline = "short jaunts through software's frontiers"
     link = "https://dupe.lol"
     linkText = "dupe.lol"
+    aboutMeLink = "https://dupe.lol/about-me"
+    githubLink = "https://github.com/njdup"
 
 [menu]
   [[menu.main]]
