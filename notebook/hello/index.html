@@ -8,18 +8,169 @@
     
     <title>dupe.sh | hello</title>
     <style type="text/css">
+
+
+:root {
+     
+    --bg0-dark:       #22282c;
+    --bg1-dark:       #272f34;
+    --bg-dark:        #2f383e;
+    --bg2-dark:       #374247;
+    --bg3-dark:       #404c51;
+    --bg4-dark:       #4a555b;
+    --bg5-dark:       #525c62;
+    --bg_visual:      #503946;
+    --bg_red:         #4e3e43;
+    --bg_green:       #425047;
+    --bg_blue:        #394f5a;
+    --bg_yellow:      #4a4940;
+    --shadow:         #00000070;
+
+    --fg-dark:        #d3c6aa;
+    --grey0-dark:     #7f897d;
+    --grey1-dark:     #859289;
+    --grey2-dark:     #9aa79d;
+
+    --faded-red:     #e67e80;
+    --faded-orange:  #e69875;
+    --faded-yellow:  #dbbc7f;
+    --faded-green:   #a7c080;
+    --faded-aqua:    #83c092;
+    --faded-blue:    #7fbbb3;
+    --faded-purple:  #d699b6;
+
+    --dim-red:       #da6362;
+    --dim-orange:    #d77f48;
+    --dim-yellow:    #bf983d;
+    --dim-green:     #899c40;
+    --dim-aqua:      #569d79;
+    --dim-blue:      #5a93a2;
+    --dim-purple:    #b87b9d;
+
+
+     
+    --bg0-light:     #f0edd8;
+    --bg1-light:     #f6f1dd;
+    --bg-light:      #fdf6e3;
+    --bg2-light:     #f3efda;
+    --bg3-light:     #edead5;
+    --bg4-light:     #e4e1cd;
+    --bg5-light:     #dfdbc8;
+    --grey0-light:   #a4ad9e;
+    --grey1-light:   #939f91;
+    --grey2-light:   #879686;
+    --shadow-light:  #3c474d20;
+
+
+    --bg_visual_light:      #eaedc8;
+    --bg_red_light:         #fbe3da;
+    --bg_green_light:       #f0f1d2;
+    --bg_blue_light:        #e9f0e9;
+    --bg_yellow_light:      #faedcd;
+
+    --fg-light:       #5c6a72;
+    
+    --light-red:     #f85552;
+    --light-orange:  #f57d26;
+    --light-yellow:  #bf983d;
+    --light-green:   #899c40;
+    --light-aqua:    #569d79;
+    --light-blue:    #5a93a2;
+    --light-purple:  #b87b9d;
+
+    --light-dim-red:    #f1706f;
+    --light-dim-orange: #f39459;
+    --light-dim-yellow: #e4b649;
+    --light-dim-green:  #a4bb4a;
+    --light-dim-aqua:   #6ec398;
+    --light-dim-blue:   #6cb3c6;
+    --light-dim-purple: #e092be;
+  }
+
+ 
+.theme-dark {
+    --background-primary:         var(--bg-dark);
+    --background-primary-alt:     var(--bg-dark);
+    --background-secondary:       var(--bg-dark);
+    --background-secondary-alt:   var(--bg-dark);
+    --text-normal:                var(--fg-dark);
+    --text-faint:                 var(--grey1-dark);
+    --text-title-h1:              var(--dim-red);
+    --text-title-h2:              var(--dim-orange);
+    --text-title-h3:              var(--dim-yellow);
+    --text-title-h4:              var(--dim-green);
+    --text-title-h5:              var(--dim-aqua);
+    --text-title-h6:              var(--dim-purple);
+    --text-link:                  var(--faded-blue);
+    --text-a:                     var(--dim-aqua);
+    --text-a-hover:               var(--faded-aqua);
+    --text-mark:                  rgba(215, 153, 33, 0.4);  
+    --pre-code:                   var(--bg1-dark);
+    --text-highlight-bg:          var(--bg_green);
+    --interactive-accent:         var(--dim-aqua);
+    --interactive-before:         var(--bg5-dark);
+    --background-modifier-border: var(--bg5-dark);
+    --text-accent:                var(--dim-blue);
+    --interactive-accent-rgb:     var(--dim-blue);
+    --inline-code:                var(--dim-blue);
+    --code-block:                 var(--fg-dark);
+    --vim-cursor:                 var(--faded-blue);
+    --text-selection:             var(--bg5-dark);
+  }
+
   body {
     margin: 5%;
     font-size: 150%;
     font-family: Berkeley Mono,muli,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    background-color: var(--bg2-dark);
+    color: var(--fg-dark);
+  }
+
+  a {
+    color: var(--faded-blue);
+  }
+ 
+  a:hover {
+    color: var(--faded-aqua);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    padding: 0.5em;
+  }
+
+  h1 {
+    background-color: var(--bg1-dark);
+    color: var(--dim-red);
+  }
+
+  h2 {
+    color: var(--dim-orange);
+  }
+
+  h3 {
+    color: var(--dim-yellow);
+  }
+
+  h4 {
+    color: var(--dim-green);
+  }
+
+  h5 {
+    color: var(--dim-aqua);
+  }
+
+  h6 {
+    color: var(--dim-purple);
   }
 
   ul {
     list-style: none;
   }
+
   li:before { 
     content: '> ';
   }
+
   li {
     font-size: 85%;
     padding: 0.15em;
@@ -241,7 +392,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; }
       </a>
     </li>
     
+    <li id="blinking-cursor"></li>
 </ul>
+
+<script>
+  (function() {
+    const cursorElement = document.getElementById('blinking-cursor');
+    const blinkInterval = 500; 
+
+    if (!cursorElement) {
+      console.error('Element with id "blinking-cursor" not found');
+      return;
+    }
+
+    function toggleVisibility() {
+      cursorElement.style.visibility = cursorElement.style.visibility === 'hidden' ? 'visible' : 'hidden';
+    }
+
+    setInterval(toggleVisibility, blinkInterval);
+  })();
+</script>
+
 
 
 </body>
