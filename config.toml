@@ -5,6 +5,11 @@ theme = "accessible-minimalism"
 disableHugoGeneratorInject = true
 enableRobotsTXT = true
 
+[params]
+    byline = "short jaunts through software's frontiers"
+    link = "https://dupe.lol"
+    linkText = "dupe.lol"
+
 [menu]
   [[menu.main]]
     name = "home"
