@@ -12,7 +12,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://dupe.sh/project/example/</guid>
-      <description>This is an example project </description>
+      <description>I&amp;rsquo;ve worked very hard to prepare this project for you all to enjoy
+Topic 1 This is where we explore something cool
+Sub topic here&amp;hellip; But first a tangent&amp;hellip; Have we considered the following?
+def cool_thing(**things): return things[&amp;#39;the thing&amp;#39;] And a tangent in the tangent&amp;hellip; </description>
     </item>
     
     <item>
