@@ -86,82 +86,72 @@
     --light-dim-aqua:   #6ec398;
     --light-dim-blue:   #6cb3c6;
     --light-dim-purple: #e092be;
+
+     
+    --kg-bg: #1F1F28;
+    --kg-fg: #DCD7BA;
+    --kg-orange: #FFA066;
+    --kg-peach-red: #FF5D62;
+    --kg-wave-red: #E46876;
+    --kg-sakura-pink: #D27E99;
+    --kg-carp-yellow: #E6C384;
+    --kg-wave-aqua: #7AA89F;
+    --kg-spring-green: #98BB6C;
+    --kg-violet: #957FB8;
+    --kg-crystal-blue: #7E9CD8;
+    --kg-lighter-bg: #363646;
+    --kg-darker-bg: #16161D;
+    --kg-dark-fg: #C8C093;
+
   }
 
- 
-.theme-dark {
-    --background-primary:         var(--bg-dark);
-    --background-primary-alt:     var(--bg-dark);
-    --background-secondary:       var(--bg-dark);
-    --background-secondary-alt:   var(--bg-dark);
-    --text-normal:                var(--fg-dark);
-    --text-faint:                 var(--grey1-dark);
-    --text-title-h1:              var(--dim-red);
-    --text-title-h2:              var(--dim-orange);
-    --text-title-h3:              var(--dim-yellow);
-    --text-title-h4:              var(--dim-green);
-    --text-title-h5:              var(--dim-aqua);
-    --text-title-h6:              var(--dim-purple);
-    --text-link:                  var(--faded-blue);
-    --text-a:                     var(--dim-aqua);
-    --text-a-hover:               var(--faded-aqua);
-    --text-mark:                  rgba(215, 153, 33, 0.4);  
-    --pre-code:                   var(--bg1-dark);
-    --text-highlight-bg:          var(--bg_green);
-    --interactive-accent:         var(--dim-aqua);
-    --interactive-before:         var(--bg5-dark);
-    --background-modifier-border: var(--bg5-dark);
-    --text-accent:                var(--dim-blue);
-    --interactive-accent-rgb:     var(--dim-blue);
-    --inline-code:                var(--dim-blue);
-    --code-block:                 var(--fg-dark);
-    --vim-cursor:                 var(--faded-blue);
-    --text-selection:             var(--bg5-dark);
-  }
-
-  body {
+ body {
     margin: 5%;
     font-size: 150%;
     font-family: Berkeley Mono,muli,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
-    background-color: var(--bg2-dark);
-    color: var(--fg-dark);
+    background-color: var(--kg-bg);
+    color: var(--kg-fg);
   }
 
   a {
-    color: var(--faded-blue);
+    color: var(--kg-wave-aqua);
   }
  
   a:hover {
-    color: var(--faded-aqua);
+    color: var(--kg-sakura-pink);
   }
 
   h1, h2, h3, h4, h5, h6 {
     padding: 0.5em;
   }
 
+  p {
+    font-size: 16px;
+  }
+
   h1 {
-    background-color: var(--bg1-dark);
-    color: var(--dim-red);
+     
+    color: var(--kg-wave-red);
   }
 
   h2 {
-    color: var(--dim-orange);
+    color: var(--kg-orange);
   }
 
   h3 {
-    color: var(--dim-yellow);
+    color: var(--kg-spring-green);
   }
 
   h4 {
-    color: var(--dim-green);
+    color: var(--kg-violet);
   }
 
   h5 {
-    color: var(--dim-aqua);
+    color: var(--kg-crystal-blue);
   }
 
   h6 {
-    color: var(--dim-purple);
+    color: var(--kg-spring-green);
   }
 
   ul {
