@@ -203,7 +203,20 @@
         url("/fonts/BerkeleyMono-BoldItalic.woff2") format("woff2");
   }
 
-</style>
+  .progress-bar {
+    display: inline-block;
+  }
+
+  @keyframes blink {
+    0% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+  }
+
+ </style>
 
 </head>
 <body>
@@ -297,25 +310,47 @@ Code import numpy as np import matplotlib.pyplot as plt r = np.arange(0, 2, 0.01
       </a>
     </li>
     
-    <li id="blinking-cursor"></li>
+    
 </ul>
 
+
+
 <script>
-  (function() {
-    const cursorElement = document.getElementById('blinking-cursor');
-    const blinkInterval = 500; 
+    (function() {
+        const progressBar = document.querySelector(".progress-bar");
 
-    if (!cursorElement) {
-      console.error('Element with id "blinking-cursor" not found');
-      return;
-    }
+        function animateProgressBar() {
+            const progressStates = [
+                "[>-----] 20%",
+                "[=>----] 40%",
+                "[===>--] 60%",
+                "[====>-] 80%"
+            ];
+            let progressIndex = 0;
 
-    function toggleVisibility() {
-      cursorElement.style.visibility = cursorElement.style.visibility === 'hidden' ? 'visible' : 'hidden';
-    }
+            const progressInterval = setInterval(() => {
+                progressBar.textContent = progressStates[progressIndex];
+                progressIndex++;
+                if (progressIndex === progressStates.length) {
+                    clearInterval(progressInterval);
+                    blinkCursor();
+                }
+            }, 800);
+        }
 
-    setInterval(toggleVisibility, blinkInterval);
-  })();
+        function blinkCursor() {
+            const blinkingState = "[====>-] 80%";
+            const hiddenState = "[====->] 80%";
+            let showCursor = false;
+
+            setInterval(() => {
+                progressBar.textContent = showCursor ? blinkingState : hiddenState;
+                showCursor = !showCursor;
+            }, 800);
+        }
+
+        animateProgressBar();
+    })()
 </script>
 
 
