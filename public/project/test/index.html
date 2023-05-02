@@ -310,6 +310,11 @@ This is a test.
     (function() {
         const progressBar = document.querySelector(".progress-bar");
 
+        if (!progressBar) {
+            console.log("No progress bar found");
+            return;
+        }
+
         function animateProgressBar() {
             const progressStates = [
                 "[>-----] 20%",

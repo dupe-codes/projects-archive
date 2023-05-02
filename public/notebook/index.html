@@ -319,6 +319,11 @@ Code import numpy as np import matplotlib.pyplot as plt r = np.arange(0, 2, 0.01
     (function() {
         const progressBar = document.querySelector(".progress-bar");
 
+        if (!progressBar) {
+            console.log("No progress bar found");
+            return;
+        }
+
         function animateProgressBar() {
             const progressStates = [
                 "[>-----] 20%",

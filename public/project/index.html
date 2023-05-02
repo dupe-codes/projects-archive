@@ -320,6 +320,11 @@ def cool_thing(**things): return things[&#39;the thing&#39;] And a tangent in th
     (function() {
         const progressBar = document.querySelector(".progress-bar");
 
+        if (!progressBar) {
+            console.log("No progress bar found");
+            return;
+        }
+
         function animateProgressBar() {
             const progressStates = [
                 "[>-----] 20%",
