@@ -7,9 +7,9 @@ enableRobotsTXT = true
 
 [params]
     byline = "jaunts through the software frontiers"
-    link = "https://dupe.lol"
-    linkText = "dupe.lol"
-    aboutMeLink = "https://dupe.lol/about-me"
+    link = "https://dupe.codes"
+    linkText = "dupe.codes"
+    aboutMeLink = "https://dupe.codes/about+me"
     githubLink = "https://github.com/njdup"
 
 [menu]
