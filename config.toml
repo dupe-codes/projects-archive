@@ -21,20 +21,4 @@ enableRobotsTXT = true
     name = "example project"
     url = "/project/example"
     weight = 2
-  [[menu.main]]
-    name = "test html only"
-    url = "/project/test"
-    weight = 3
-  [[menu.main]]
-    name = "test quarto file"
-    url = "/notebook/hello"
-    weight = 4
-  [[menu.main]]
-    name = "test quarto 2"
-    url = "/notebook/hello2"
-    weight = 5
-  [[menu.main]]
-    name = "kodemo test"
-    url = "/walkthrough/kodemo"
-    weight = 6
 
