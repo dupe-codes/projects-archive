@@ -10,7 +10,6 @@
     <title>dupe.sh</title>
     <style type="text/css">
 
-
 :root {
      
     --bg0-dark:       #22282c;
@@ -216,6 +215,10 @@
     }
   }
 
+  .hidden-div {
+    display: none;
+  }
+
  </style>
 
 </head>
@@ -224,66 +227,38 @@
 
 
   <h1 class="title">dupe.sh</h1>
-  <h6><em>under construction...</em> <span class="progress-bar">[------] 0%</span></h6>
-  <h6 class="subtitle">
+  <h6><em>compiling...</em><span class="progress-bar">[------------]  0%</span></h6>
+  <div class="hidden-div">
+    <h6 class="subtitle">
       jaunts through the software frontiers <br></br>
       see my writing @ <a href=https://dupe.codes>dupe.codes</a>
       <br></br> learn who i am @ <a href=https://dupe.codes/about&#43;me>dupe.codes/about-me</a>
       <br></br> see the code @ <a href=https://github.com/njdup> github/njdup</a>
-
-  </h6>
-
-
-  
-
+    </h6>
+    
+  </div>
 <p><a name="nav-menu" id="nav-menu"></a></p>
 
-<ul>
-    
-    <li>
-      <a href="/">
-      
-      home
-      </a>
-    </li>
-    
-    <li>
-      <a href="/project/example">
-      
-      example project
-      </a>
-    </li>
-    
-    <li>
-      <a href="/project/test">
-      
-      test html only
-      </a>
-    </li>
-    
-    <li>
-      <a href="/notebook/hello">
-      
-      test quarto file
-      </a>
-    </li>
-    
-    <li>
-      <a href="/notebook/hello2">
-      
-      test quarto 2
-      </a>
-    </li>
-    
-    <li>
-      <a href="/walkthrough/kodemo">
-      
-      kodemo test
-      </a>
-    </li>
-    
-    
-</ul>
+<div class="hidden-div">
+    <ul>
+        
+        <li>
+          <a href="/">
+          
+          home
+          </a>
+        </li>
+        
+        <li>
+          <a href="/project/example">
+          
+          example project
+          </a>
+        </li>
+        
+        
+    </ul>
+</div>
 
 
 
@@ -293,15 +268,17 @@
 
         if (!progressBar) {
             console.log("No progress bar found");
+            showHiddenContent();
             return;
         }
 
         function animateProgressBar() {
             const progressStates = [
-                "[>-----] 20%",
-                "[=>----] 40%",
-                "[===>--] 60%",
-                "[====>-] 80%"
+                "[==>--------]  20%",
+                "[====>------]  40%",
+                "[======>----]  60%",
+                "[========>--]  80%",
+                "[==========>] 100%",
             ];
             let progressIndex = 0;
 
@@ -310,20 +287,17 @@
                 progressIndex++;
                 if (progressIndex === progressStates.length) {
                     clearInterval(progressInterval);
-                    blinkCursor();
-                }
-            }, 800);
+                    progressBar.textContent = "[==========>] 100%, done!";
+                    showHiddenContent();
+               }
+            }, 275);
         }
 
-        function blinkCursor() {
-            const blinkingState = "[====>-] 80%";
-            const hiddenState = "[====->] 80%";
-            let showCursor = false;
-
-            setInterval(() => {
-                progressBar.textContent = showCursor ? blinkingState : hiddenState;
-                showCursor = !showCursor;
-            }, 800);
+        function showHiddenContent() {
+            var hiddenDivs = document.getElementsByClassName("hidden-div");
+            for (var i = 0; i < hiddenDivs.length; i++) {
+                hiddenDivs[i].style.display = "block";
+            }
         }
 
         animateProgressBar();
