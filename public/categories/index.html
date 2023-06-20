@@ -10,7 +10,6 @@
     <title>dupe.sh | Categories</title>
     <style type="text/css">
 
-
 :root {
      
     --bg0-dark:       #22282c;
@@ -216,6 +215,10 @@
     }
   }
 
+  .hidden-div {
+    display: none;
+  }
+
  </style>
 
 </head>
@@ -230,52 +233,26 @@
 
 <p><a name="nav-menu" id="nav-menu"></a></p>
 
-<ul>
-    
-    <li>
-      <a href="/">
-      
-      home
-      </a>
-    </li>
-    
-    <li>
-      <a href="/project/example">
-      
-      example project
-      </a>
-    </li>
-    
-    <li>
-      <a href="/project/test">
-      
-      test html only
-      </a>
-    </li>
-    
-    <li>
-      <a href="/notebook/hello">
-      
-      test quarto file
-      </a>
-    </li>
-    
-    <li>
-      <a href="/notebook/hello2">
-      
-      test quarto 2
-      </a>
-    </li>
-    
-    <li>
-      <a href="/walkthrough/kodemo">
-      
-      kodemo test
-      </a>
-    </li>
-    
-    
-</ul>
+<div class="hidden-div">
+    <ul>
+        
+        <li>
+          <a href="/">
+          
+          home
+          </a>
+        </li>
+        
+        <li>
+          <a href="/project/example">
+          
+          example project
+          </a>
+        </li>
+        
+        
+    </ul>
+</div>
 
 
 
@@ -285,15 +262,17 @@
 
         if (!progressBar) {
             console.log("No progress bar found");
+            showHiddenContent();
             return;
         }
 
         function animateProgressBar() {
             const progressStates = [
-                "[>-----] 20%",
-                "[=>----] 40%",
-                "[===>--] 60%",
-                "[====>-] 80%"
+                "[==>--------]  20%",
+                "[====>------]  40%",
+                "[======>----]  60%",
+                "[========>--]  80%",
+                "[==========>] 100%",
             ];
             let progressIndex = 0;
 
@@ -302,20 +281,17 @@
                 progressIndex++;
                 if (progressIndex === progressStates.length) {
                     clearInterval(progressInterval);
-                    blinkCursor();
-                }
-            }, 800);
+                    progressBar.textContent = "[==========>] 100%, done!";
+                    showHiddenContent();
+               }
+            }, 275);
         }
 
-        function blinkCursor() {
-            const blinkingState = "[====>-] 80%";
-            const hiddenState = "[====->] 80%";
-            let showCursor = false;
-
-            setInterval(() => {
-                progressBar.textContent = showCursor ? blinkingState : hiddenState;
-                showCursor = !showCursor;
-            }, 800);
+        function showHiddenContent() {
+            var hiddenDivs = document.getElementsByClassName("hidden-div");
+            for (var i = 0; i < hiddenDivs.length; i++) {
+                hiddenDivs[i].style.display = "block";
+            }
         }
 
         animateProgressBar();
