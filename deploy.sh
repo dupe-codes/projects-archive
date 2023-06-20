@@ -6,10 +6,10 @@ set -e
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
 # Build the project.
-hugo 
+hugo
 
 # Commit changes.
-msg="rebuilding site $(date)"
+msg="build: rebuilding site $(date)"
 if [ -n "$*" ]; then
 	msg="$*"
 fi
