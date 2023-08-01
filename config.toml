@@ -18,7 +18,11 @@ enableRobotsTXT = true
     url = "/"
     weight = 1
   [[menu.main]]
+    name = "blog rss feed"
+    url = "/blog.xml"
+    weight = 2
+  [[menu.main]]
     name = "example project"
     url = "/project/example"
-    weight = 2
+    weight = 3
 
