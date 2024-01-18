@@ -10,7 +10,7 @@ enableRobotsTXT = true
     link = "https://dupe.codes"
     linkText = "dupe.codes"
     aboutMeLink = "https://dupe.codes/about+me"
-    githubLink = "https://github.com/njdup"
+    githubLink = "https://github.com/dupe-codes"
 
 [menu]
   [[menu.main]]
