@@ -8,11 +8,18 @@
     <language>en-us</language>
     <atom:link href="http://dupe.sh/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title></title>
+      <link>http://dupe.sh/project/gamedev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://dupe.sh/project/gamedev/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Example Project</title>
       <link>http://dupe.sh/project/example/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://dupe.sh/project/example/</guid>
-      <description>I&amp;rsquo;ve worked very hard to prepare this project for you all to enjoy&#xA;Topic 1 This is where we explore something cool&#xA;Sub topic here&amp;hellip; But first a tangent&amp;hellip; Have we considered the following?&#xA;def cool_thing(**things): return things[&amp;#39;the thing&amp;#39;] And a tangent in the tangent&amp;hellip; </description>
+      <description>gamedev I&amp;rsquo;ve started my game dev era, finally turning my daydreams into stuff worth sharing.&#xA;immediate [!NOTE] the world i made for me and you&#xA;When the network went up, it carried the hope of something better. No one mentioned they didn&amp;rsquo;t mean for us.&#xA;long-term [!NOTE] what have we gained&#xA;New Metropole, 200 years post Rupture. Thanks to the Gendermerie&amp;rsquo;s vigilance and the Inquisition&amp;rsquo;s blood magic, Metropolitans enjoy comfortable lives safe from attack by Dead Ghasts or infection from Acute Synthesis Disintegration Disease.</description>
     </item>
   </channel>
 </rss>
