@@ -305,10 +305,27 @@ New Metropole, 200 years post Rupture. Thanks to the Gendermerie&rsquo;s vigilan
           </a>
         </li>
         
-        
+        <li id="blinking-cursor"></li> 
     </ul>
 </div>
 
+<script>
+  (function() {
+    const cursorElement = document.getElementById('blinking-cursor');
+    const blinkInterval = 500; 
+
+    if (!cursorElement) {
+      console.error('Element with id "blinking-cursor" not found');
+      return;
+    }
+
+    function toggleVisibility() {
+      cursorElement.style.visibility = cursorElement.style.visibility === 'hidden' ? 'visible' : 'hidden';
+    }
+
+    setInterval(toggleVisibility, blinkInterval);
+  })();
+</script>
 
 
 <script>
@@ -352,7 +369,6 @@ New Metropole, 200 years post Rupture. Thanks to the Gendermerie&rsquo;s vigilan
         animateProgressBar();
     })()
 </script>
-
 
 
 </body>
