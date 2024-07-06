@@ -1,5 +1,6 @@
 +++
 title = "gamedev projects"
+noComments = true
 +++
 
 I've started my game dev era, finally turning my daydreams into stuff worth sharing.
