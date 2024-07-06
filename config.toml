@@ -22,7 +22,7 @@ enableRobotsTXT = true
     url = "/blog.xml"
     weight = 2
   [[menu.main]]
-    name = "example project"
-    url = "/project/example"
+    name = "game projects"
+    url = "/project/gamedev"
     weight = 3
 
